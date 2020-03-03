@@ -13,6 +13,12 @@ module.exports = {
     }
   ],
   rules: {
+    semi: ['error', 'never'],
     'no-empty': [ 'error', { allowEmptyCatch: true } ],
+    'no-var': ['error'],
+    'prefer-const': ['error'],
+    'prefer-destructuring': ['error'],
+    'object-shorthand': ['error'],
+    'quotes': ['error', 'single'],
   }
 }
