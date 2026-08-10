@@ -17,7 +17,7 @@ declare class Contact {
      * @param {string} [address]
      * @param {string} [name]
      */
-    constructor(address?: string | undefined, name?: string | undefined);
+    constructor(address?: string, name?: string);
     /** @type {string} Contact name */
     name: string;
     /** @type {string} Email address */

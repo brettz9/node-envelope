@@ -10,7 +10,7 @@ declare class Header extends Map<any, any> {
      * @param {Number} [length]
      * @returns {Header}
      */
-    static parse(buffer: Buffer, offset?: number | undefined, length?: number | undefined): Header;
+    static parse(buffer: Buffer, offset?: number, length?: number): Header;
     /**
      * @param {Header} header
      */
@@ -29,7 +29,7 @@ declare class Header extends Map<any, any> {
      * @param {Number} [length]
      * @returns {Header}
      */
-    parse(buffer: Buffer, offset?: number | undefined, length?: number | undefined): Header;
+    parse(buffer: Buffer, offset?: number, length?: number): Header;
     toString(): void;
 }
 //# sourceMappingURL=header.d.ts.map

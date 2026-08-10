@@ -22,7 +22,7 @@ export function encode(input: Buffer | string, wordMode: boolean): string;
  * @param {boolean} [wordMode]
  * @returns {string|Buffer}
  */
-export function decode(input: string | Buffer, charset: string, wordMode?: boolean | undefined): string | Buffer;
+export function decode(input: string | Buffer, charset: string, wordMode?: boolean): string | Buffer;
 /**
  * @param {string|Buffer} input
  * @param {"B"|"Q"|"b"|"q"} type
@@ -35,5 +35,5 @@ export function encodeWord(input: string | Buffer, type: "B" | "Q" | "b" | "q", 
  * @param {boolean} [consumeSubsequentSeparator]
  * @returns {string}
  */
-export function decodeWord(input: string, consumeSubsequentSeparator?: boolean | undefined): string;
+export function decodeWord(input: string, consumeSubsequentSeparator?: boolean): string;
 //# sourceMappingURL=quoted-printable.d.ts.map
